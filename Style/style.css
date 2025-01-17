@@ -1,9 +1,115 @@
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
 
-.work-sans {
+
+.work-sans-normal {
   font-family: "Work Sans", serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
 }
+
+
+
+/* header styles */
+   .bg-light{
+    background: rgba(255, 144, 14, 0.1);
+   }
+/* navbar related styles */
+/* btn-primary  */
+ .btn-primary{
+  border-radius: 8px;
+  background: rgb(255, 144, 14);
+  color: rgb(255, 255, 255);
+border: none;
+font-size: 1.25rem;
+font-weight: 600;
+line-height: 23px;
+letter-spacing: 0%;
+text-align: center;
+padding: 20px 25px;
+ }
+
+/* dark 2 */
+ .text-grey{
+  color: rgb(66, 66, 66);
+ }
+/* dark 3 */
+
+ .text-light-grey{
+   color: rgb(114, 114, 114);
+ }
+
+.displaying-flex{
+  display: flex;
+}
+
+
+ .nav-items{
+  list-style: none;
+  margin-right: 30px;
+ }
+
+ .nav-link{
+  text-decoration: none;
+  font-size: 18px;
+font-weight: 500;
+line-height: 26px;
+ }
+ 
+ .nav-bar{
+  justify-content: space-between;
+  align-items: center;
+ }
+
+  .nav-bar ,.banner{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+   .brand{
+    color: rgb(19, 19, 19);
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: 0%;
+    text-align: center;
+   }
+
+  .banner-content
+  {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 50px ;
+  }
+
+  .banner-title{
+    color: rgb(19, 19, 19);
+font-family: Work Sans;
+font-size: 4rem;
+font-weight: 700;
+line-height: 4.5rem;
+letter-spacing: 0%;
+text-align: center;
+  }
+
+  .banner-description{
+    color: rgb(114, 114, 114);
+font-family: Work Sans;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.6rem;
+letter-spacing: 0%;
+text-align: center;
+  }
+
+  .banner-image{
+    width: 100%;
+  }
+
+  /*1,break point 2.Media Query 3.style 4.image , navbar,font-size 5.test  */
+
+  @media screen and (max-width:576px){
+      .nav-bar , .nav-links{
+        flex-direction: column;
+      }
+  }
